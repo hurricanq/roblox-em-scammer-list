@@ -7,14 +7,14 @@ import data from "./data"
 function App() {
   const cards = data.map(item => {
     return (
-      <Card key={item.id} {...item} />
+      <Card key={item.id} avatar={item.avatar} {...item} />
     )
   })
 
   return (
     <>
       <div className="font-poppins bg-dark text-white">
-        <Header />
+        <Header logo="./assets/epic-minigames.webp" />
         <div className="px-8 pb-5">
           <Hero />
           <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-5">
